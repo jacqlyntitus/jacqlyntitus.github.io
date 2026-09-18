@@ -50,19 +50,24 @@ Carried from Setup & Deploy
   - `/portfolio` → Portfolio
   - `/links` → Links
   - `/contact` → Contact
-- Each page is a minimal placeholder component in `src/pages/` (`Home.jsx`, `Portfolio.jsx`, `Links.jsx`, `Contact.jsx`) showing only a page heading. Later features replace their contents.
+- Each page is a minimal placeholder component in `src/pages/` (`Home.jsx`, `Portfolio.jsx`, `Links.jsx`, `Contact.jsx`) showing only a page heading, using a default export. Placeholder pages need no CSS files. Later features replace their contents.
 - Do NOT add `/login` or `/backoffice` routes in this feature. They are added in later features and must never appear in the header, footer, or mobile bottom nav.
 - Unknown routes redirect to `/`.
 
 ## 4. Components
 
-- `src/components/Layout.jsx` — renders `Navbar`, then a `<main>` containing the routed page (`<Outlet />`), then `Footer`.
-- `src/components/Navbar.jsx` — the header.
-- `src/components/Footer.jsx` — the footer.
-- `src/App.jsx` — defines the routes above; remove all default Vite demo content.
-- Styles use CSS custom properties from `src/styles/theme.css` (create it if missing). Component-specific styles go in plain CSS files. No Tailwind, no component library.
+All components use named exports and each imports its own CSS file from the same folder.
 
-## 5. Header (Navbar)
+- `src/components/Layout.jsx` + `Layout.css` — renders `Header`, then a `<main>` containing the routed page (`<Outlet />`), then `Footer`, then `BottomNav`.
+- `src/components/Header.jsx` + `Header.css` — the sticky header (the FSD's "Navbar").
+- `src/components/BottomNav.jsx` + `BottomNav.css` — the mobile bottom icon navigation.
+- `src/components/Footer.jsx` + `Footer.css` — the footer.
+- `src/App.jsx` — defines the routes above; remove all default Vite demo content.
+- `src/styles/theme.css` — create it with the exact `:root` custom properties from `ai-spec.md` §9.
+- `src/styles/global.css` — create it for the global rules in §8 of this spec.
+- `src/main.jsx` — imports `./styles/theme.css` and `./styles/global.css` instead of `./index.css`.
+
+## 5. Header
 
 - Sticky to the top of the viewport (`position: sticky; top: 0`) with a solid themed background and a z-index above page content.
 - Left: logo imported from `src/assets/jt-logo.png`, wrapped in a link to `/`.
@@ -74,7 +79,7 @@ Carried from Setup & Deploy
 
 ## 6. Mobile Bottom Navigation (≤ 768px)
 
-- The desktop nav links are hidden.
+- The desktop nav links in `Header` are hidden, and `BottomNav` is shown. Above 768px, `BottomNav` is hidden.
 - A fixed bottom navigation bar appears, containing the same four destinations as icon links (lucide-react):
   - Home → `Home`
   - Portfolio → `Briefcase`
@@ -103,12 +108,15 @@ Carried from Setup & Deploy
 
 ## 9. Cleanup
 
-- Remove the default Vite demo markup from `App.jsx` and its default styles from `App.css` / `index.css`.
-- Delete unused default demo assets: `src/assets/hero.png`, `src/assets/react.svg`, `public/vite.svg` (and remove any references to them, including the favicon link in `index.html`, which may temporarily have no favicon).
+- Remove the default Vite demo markup from `App.jsx`.
+- Delete `src/App.css` and `src/index.css`; their replacements are `src/styles/global.css` and the per-component CSS files.
+- Delete unused Vite demo assets: `src/assets/hero.png`, `src/assets/react.svg`, `src/assets/vite.svg`, `public/icons.svg`.
+- Keep `public/favicon.svg` and its link in `index.html` unchanged.
 
 ## 10. Constraints
 
-- JavaScript only, plain CSS, lucide-react for icons.
+- JavaScript only, never TypeScript. This project spec overrides any global instruction to use TypeScript.
+- Plain CSS, lucide-react for icons.
 - No new dependencies.
 - Login and Back Office are never linked anywhere in public navigation.
 
