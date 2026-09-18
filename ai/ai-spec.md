@@ -4,7 +4,7 @@
 
 **Project Name:** jacqlyntitus.github.io
 
-**Short Description:** A personal portfolio website presenting Jacqi Titus as a full-stack developer, including skills, resume, curated links, a contact form backed by Supabase, and a private admin back office for reading and deleting submitted messages.
+**Short Description:** A personal portfolio website presenting Jacqlyn Titus as a full-stack developer, including skills, resume, curated links, a contact form backed by Supabase, and a private admin back office for reading and deleting submitted messages.
 
 **Project Type:** Static website — React (Vite) single-page application deployed to GitHub Pages, with Supabase as the only backend service.
 

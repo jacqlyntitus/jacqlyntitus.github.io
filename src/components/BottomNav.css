@@ -1,0 +1,40 @@
+.bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--color-surface);
+    border-top: 2px solid var(--color-border);
+  }
+
+  .bottom-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: var(--radius-pill);
+    color: var(--color-text-muted);
+  }
+
+  .bottom-nav a:focus-visible {
+    outline: 2px solid var(--color-electric);
+    outline-offset: 2px;
+  }
+
+  .bottom-nav a.active {
+    background: var(--color-moss);
+    color: var(--color-bg);
+    box-shadow: 0 0 0 2px var(--color-electric);
+  }
+}

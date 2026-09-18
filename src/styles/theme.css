@@ -1,0 +1,31 @@
+:root {
+  /* Base — deep forest */
+  --color-bg:            #0d1410;
+  --color-surface:       #16211b;
+  --color-surface-alt:   #1e2d25;
+  --color-border:        #2e4237;
+
+  /* Text */
+  --color-text:          #e8e4d4;
+  --color-text-muted:    #a3b0a3;
+
+  /* Woodland accents */
+  --color-moss:          #7f9c6a;
+  --color-mallorn:       #e0b64a;
+  --color-silver:        #cfd6cd;
+
+  /* Retro-futuristic accents */
+  --color-electric:      #a855f7;
+  --color-ember:         #ff6a1f;
+
+  /* Shape language */
+  --radius-pill:  999px;
+  --radius-lg:    24px;
+  --radius-md:    14px;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+}
