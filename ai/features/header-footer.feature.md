@@ -71,7 +71,7 @@ All components use named exports and each imports its own CSS file from the same
 
 - Sticky to the top of the viewport (`position: sticky; top: 0`) with a solid themed background and a z-index above page content.
 - Left: logo imported from `src/assets/jt-logo.png`, wrapped in a link to `/`.
-  - Alt text: `Jacqi Titus JT monogram logo`.
+  - Alt text: `Jacqlyn Titus JT monogram logo`.
   - Height about 48px on desktop, about 40px on mobile; width auto; never overflows.
 - Right (desktop only): nav links in this order: Home, Portfolio, Links, Contact.
   - Use React Router `NavLink` so the current page is visually highlighted.
@@ -97,7 +97,7 @@ All components use named exports and each imports its own CSS file from the same
   - LinkedIn: `https://www.linkedin.com/in/jacqlyn-titus/`
   - GitHub: `https://github.com/jacqlyntitus`
   - External links open in a new tab with `rel="noopener noreferrer"`.
-- Copyright notice: `© <current year> Jacqi Titus. All rights reserved.` The year is computed with JavaScript, not hard-coded.
+- Copyright notice: `© <current year> Jacqlyn Titus. All rights reserved.` The year is computed with JavaScript, not hard-coded.
 - Never contains links to `/login` or `/backoffice`.
 
 ## 8. Global Responsive Rules
