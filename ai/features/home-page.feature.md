@@ -42,7 +42,8 @@ AI images
 - `src/pages/Home.jsx` + `Home.css` — replace the placeholder. Default export.
 - `src/components/SkillCard.jsx` + `SkillCard.css` — reusable card showing an icon, a title, and supporting text. Named export.
 - `src/data/skills.js` — exports `technicalSkills` and `softSkills` arrays. Each item: `{ title, description, icon }`, where `icon` is a lucide-react component reference.
-- `src/assets/home-hero.png` and `src/assets/home-skills.png` — already present (currently placeholders; replaced later with AI-generated images of the same filenames). Do not modify them.
+- `src/assets/home-hero.png` — a real photo of the developer (currently a placeholder). Not AI-generated. Do not modify.
+- `src/assets/home-skills.png` and `src/assets/home-soft-skills.png` — the page's two AI-generated images (currently placeholders; replaced later with same filenames). Do not modify them.
 
 No other files change.
 
@@ -74,13 +75,14 @@ Three `<section>` elements, in this order:
 
 1. Introduction
    - Two columns on desktop: text (name, tagline, paragraph) on one side, `home-hero.png` on the other.
-   - Hero image alt text: `AI-generated illustration of a developer workspace blending forest and futuristic technology`.
+   - Hero image alt text: `Portrait of Jacqlyn Titus`.
 2. Technical Skills
    - Heading `Technical Skills`.
    - `home-skills.png` displayed as a wide banner under the heading. Alt text: `AI-generated banner of glowing circuitry intertwined with leaves`.
    - Four `SkillCard`s in a grid (2 columns on desktop).
 3. Soft Skills
    - Heading `Soft Skills`.
+   - `home-soft-skills.png` displayed as a wide banner under the heading, styled the same as the Technical Skills banner. Alt text: `AI-generated banner of glowing light and leaves suggesting connection and growth`.
    - Three `SkillCard`s in a grid (3 columns on desktop).
 
 Alt text may be updated when the final images replace the placeholders.
@@ -111,7 +113,7 @@ Alt text may be updated when the final images replace the placeholders.
 | 5 | 4 technical skills | Each card has icon, title, and sentence |
 | 6 | 3 soft skills | Each card has icon, title, and sentence |
 | 7 | 3 distinct sections | Intro, Technical Skills, Soft Skills clearly separated |
-| 8 | 2 images with alt text | Both images render; `alt` present on each |
+| 8 | Photo plus 2 AI images, all with alt text | Hero photo and both banners render; `alt` present on each |
 | 9 | AI images documented | Entries in `./ai/ai-assets.md` once final images are added |
 | 10 | Responsive | At 375px: single column, no horizontal scroll |
 | 11 | No hardcoded colors | Search `Home.css` and `SkillCard.css` for `#`: none |
