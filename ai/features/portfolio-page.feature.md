@@ -44,6 +44,7 @@ AI images
 - `src/assets/portfolio-experience.png` — AI-generated banner for the Work Experience section. Already exists. Do not modify.
 - `src/assets/portfolio-projects.png` — AI-generated banner for the Projects section. Already exists. Do not modify.
 - `src/assets/codebloggs.png` — screenshot used as the CodeBloggs project image. Not AI-generated. Already exists. Do not modify.
+- `src/assets/rocket-food-delivery.png` — screenshot used as the Rocket Food Delivery project image. Not AI-generated. Already exists. Do not modify.
 - `public/resume.pdf` — the resume. Already exists. Do not modify.
 
 Do not modify `ai/ai-assets.md`. No other files change.
@@ -67,11 +68,20 @@ Page heading (the page's only `<h1>`): `Portfolio`
 Description: `Deliver critical-care respiratory therapy across emergency, ICU, and floor units, making rapid, evidence-based decisions under pressure. Maintain precise, audit-ready documentation and interpret complex clinical data to adjust treatment in real time. Recognized for consistent, error-free work and serve as a go-to mentor for colleagues and new hires.`
 
 `projects`
+
+Entry 1
 - name: `CodeBloggs`
 - tech: `['React', 'Redux Toolkit', 'React Router', 'Node.js', 'Express', 'MongoDB (Mongoose)', 'bcrypt']`
 - description: `A simple social blogging app where users register, log in, and share posts and comments. I built both the front end and the back end: a React client and a Node.js and Express REST API backed by MongoDB.`
 - image: imported from `src/assets/codebloggs.png`
-- imageAlt: `Screenshot of the CodeBloggs GitHub repository showing its client and server folders`
+- imageAlt: `Screenshot of the CodeBloggs network page showing user profile cards`
+
+Entry 2
+- name: `Rocket Food Delivery`
+- tech: `['React Native', 'Expo', 'Java', 'Spring Boot']`
+- description: `A React Native and Expo mobile app with a Spring Boot backend, covering the customer ordering flow, courier delivery management, and account settings. I built the mobile app against the backend API.`
+- image: imported from `src/assets/rocket-food-delivery.png`
+- imageAlt: `Screenshot of the Rocket Food Delivery app showing a list of nearby restaurants`
 
 ## 5. Page Structure
 
@@ -97,7 +107,13 @@ Then three `<section>` elements, in this order:
 
 ## 6. Styling
 
-- Match the Home page's look: sections separated by alternating backgrounds (`--color-bg` / `--color-surface`) and generous vertical spacing from the spacing scale.
+- Match the Home page's look: sections separated by alternating backgrounds (`--color-bg` / `--color-surface`).
+- The page is compact: the reader should get through it with little scrolling. Use `--space-sm` inside cards and `--space-md` between sections; never `--space-lg`.
+- Banners are thin strips, not tall images: `max-height: 140px` with `object-fit: cover`.
+- Education entries are a compact grid: three across on desktop, one per row on mobile, one short line each.
+- Work and project cards use tight line spacing and no oversized text; headings stay at their default sizes.
+- Project images share a fixed height of 220px with `object-fit: contain` and a `--color-surface` background, so wide desktop screenshots and tall phone screenshots sit in equal-sized cards.
+- Project cards sit two across on desktop and one per row at ≤ 768px.
 - Cards: `--color-surface-alt` background, `--radius-lg` corners.
 - Download button: `--radius-pill`, accent color on hover and focus.
 - Tech tags: `--radius-pill`, small text, bordered with `--color-border`.
@@ -119,7 +135,7 @@ Then three `<section>` elements, in this order:
 | 1 | Page at `/portfolio` | Click Portfolio in the nav; page renders |
 | 2 | Education entries | 3 entries, each with institution, program, dates, newest first |
 | 3 | Work entry | Title, organization, dates, and description shown |
-| 4 | Project entry | CodeBloggs card shows image, name, tech tags, description |
+| 4 | Project entries | CodeBloggs and Rocket Food Delivery cards each show image, name, tech tags, description |
 | 5 | Resume download | Clicking the button downloads `Jacqlyn-Titus-Resume.pdf` and it opens |
 | 6 | 3 distinct sections | Education, Work Experience, Projects clearly separated |
 | 7 | 2 AI images with alt text | Both banners render; `alt` present on each image on the page |
