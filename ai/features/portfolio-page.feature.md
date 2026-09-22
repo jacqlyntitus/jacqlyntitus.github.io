@@ -120,6 +120,7 @@ Then three `<section>` elements, in this order:
 - Images use `--radius-lg` corners and never overflow their container.
 - At ≤ 768px: everything is a single column; no horizontal scrolling at 375px.
 - Colors only via custom properties from `src/styles/theme.css`. No hardcoded color values.
+- Work experience cards span the full width of the section, matching the banner width above them, with the description in a comfortable reading column.
 
 ## 7. Constraints
 
