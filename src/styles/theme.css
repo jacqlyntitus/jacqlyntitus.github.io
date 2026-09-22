@@ -18,6 +18,10 @@
   --color-electric:      #a855f7;
   --color-ember:         #ff6a1f;
 
+  /* Feedback */
+  --color-success:       #4ade80;
+  --color-error:         #f87171;
+
   /* Shape language */
   --radius-pill:  999px;
   --radius-lg:    24px;
