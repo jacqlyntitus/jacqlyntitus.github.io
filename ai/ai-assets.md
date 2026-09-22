@@ -24,3 +24,17 @@ Do not imitate or reference any existing franchise logos, insignia, symbols, or 
 
 - **Refinement:** Refined over many conversational iterations in Gemini toward a more sci-fi look with iridescent orange, purple, and gold tones.
 - **Post-processing:** Dark background removed to transparency and cropped to the emblem (Python/Pillow). No changes to the design or colors.
+
+## src/assets/home-skills.png
+- Tool: Google Gemini (free tier)
+- Used in: Home page, Technical Skills section banner
+- Starting prompt: Create a wide 16:9 website banner of glowing circuit traces intertwined with simple gold leaves, as if technology and nature are growing together. Colors: deep forest green background, antique gold leaves, electric purple (#a855f7) and ember orange (#ff6a1f) glowing circuitry. Sleek, modern, sci-fi, minimal clutter, no text, no watermark. Do not imitate any existing franchise logos, symbols, or designs.
+- Refinement: None; first result used.
+- Post-processing: Converted from JPEG to PNG and renamed by Claude (Pillow); content and colors untouched.
+
+## src/assets/home-soft-skills.png
+- Tool: Google Gemini (free tier)
+- Used in: Home page, Soft Skills section banner
+- Starting prompt: Create a wide 16:9 website banner showing soft glowing lines of light connecting simple gold leaves, suggesting connection, communication, and growth. Colors: deep forest green background, antique gold, electric purple (#a855f7) and ember orange (#ff6a1f) glow. Calm, modern, sci-fi, minimal clutter, no text, no watermark. Do not imitate any existing franchise logos, symbols, or designs.
+- Refinement: None; first result used.
+- Post-processing: Converted from JPEG to PNG and renamed by Claude (Pillow); content and colors untouched.

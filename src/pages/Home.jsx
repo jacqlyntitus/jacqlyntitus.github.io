@@ -1,5 +1,5 @@
 import './Home.css'
-import heroImage from '../assets/home-hero.png'
+import heroImage from '../assets/jt-logo.png'
 import skillsImage from '../assets/home-skills.png'
 import softSkillsImage from '../assets/home-soft-skills.png'
 import { SkillCard } from '../components/SkillCard'
@@ -24,7 +24,7 @@ function Home() {
         <img
           className="home-image"
           src={heroImage}
-          alt="Portrait of Jacqlyn Titus"
+          alt="Jacqlyn Titus JT monogram logo"
         />
       </section>
 
