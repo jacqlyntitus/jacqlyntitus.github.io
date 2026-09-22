@@ -38,3 +38,17 @@ Do not imitate or reference any existing franchise logos, insignia, symbols, or 
 - Starting prompt: Create a wide 16:9 website banner showing soft glowing lines of light connecting simple gold leaves, suggesting connection, communication, and growth. Colors: deep forest green background, antique gold, electric purple (#a855f7) and ember orange (#ff6a1f) glow. Calm, modern, sci-fi, minimal clutter, no text, no watermark. Do not imitate any existing franchise logos, symbols, or designs.
 - Refinement: None; first result used.
 - Post-processing: Converted from JPEG to PNG and renamed by Claude (Pillow); content and colors untouched.
+
+## src/assets/portfolio-experience.png
+- Tool: Google Gemini (free tier)
+- Used in: Portfolio page, Work Experience section banner
+- Starting prompt: Create a very simple, minimal wide 16:9 website banner: a single antique gold leaf on the right side, with one thin glowing electric purple (#a855f7) line flowing from it across the image. Deep forest green background with lots of empty space. Flat, clean, modern, only two or three elements, no clutter, no text, no watermark. Do not imitate any existing franchise logos, symbols, or designs.
+- Refinement: None; first result used.
+- Post-processing: Converted from JPEG to PNG and renamed by Claude (Pillow); content and colors untouched.
+
+## src/assets/portfolio-projects.png
+- Tool: Google Gemini (free tier)
+- Used in: Portfolio page, Projects section banner
+- Starting prompt: Create a very simple, minimal wide 16:9 website banner: one small glowing ember orange (#ff6a1f) geometric outline shape, like a rounded hexagon, with a single antique gold leaf resting on it, placed off-center. Deep forest green background with lots of empty space. Flat, clean, modern, only two or three elements, no clutter, no text, no watermark. Do not imitate any existing franchise logos, symbols, or designs.
+- Refinement: First result rejected. Restarted in a new chat with portfolio-experience.png as the reference image: "Create a new image in this same style and layout, but make the glowing line ember orange (#ff6a1f) instead of purple, and flip the composition so the leaves sit on the opposite side."
+- Post-processing: Converted from JPEG to PNG and renamed by Claude (Pillow); content and colors untouched.
