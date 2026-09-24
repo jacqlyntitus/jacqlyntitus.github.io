@@ -5,9 +5,8 @@ Repo link: https://github.com/jacqlyntitus/jacqlyntitus.github.io
 
 Video links:
 
-Pitch video V1: https://youtu.be/jIB1Ws_Dq4c?si=Gh5RrF50Vd9M06xq
-Pitch video V2:
-
+Pitch video V1: https://youtu.be/jIB1Ws_Dq4c?si=yzHaAriHSthPSCbH
+Pitch video V2: https://youtu.be/Y-isq7b_NCE?si=9UcwkcBvJsc9gdBj
 Concepts:
 Leetcode:
 Tech Demo: 
