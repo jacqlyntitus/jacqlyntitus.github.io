@@ -34,12 +34,14 @@ function Portfolio() {
       </section>
 
       <section className="portfolio-section portfolio-work">
-        <h2 className="portfolio-heading">Work Experience</h2>
-        <img
-          className="portfolio-image portfolio-banner"
-          src={experienceImage}
-          alt="AI-generated banner of a glowing purple line winding through gold leaves"
-        />
+        <div className="portfolio-banner">
+          <img
+            className="portfolio-banner-image"
+            src={experienceImage}
+            alt="AI-generated banner of a glowing purple line winding through gold leaves"
+          />
+          <h2 className="portfolio-heading">Work Experience</h2>
+        </div>
         <div className="portfolio-grid">
           {work.map((entry) => (
             <article key={entry.title} className="portfolio-card">
@@ -53,12 +55,14 @@ function Portfolio() {
       </section>
 
       <section className="portfolio-section portfolio-projects">
-        <h2 className="portfolio-heading">Projects</h2>
-        <img
-          className="portfolio-image portfolio-banner"
-          src={projectsImage}
-          alt="AI-generated banner of a glowing orange line winding through gold leaves"
-        />
+        <div className="portfolio-banner">
+          <img
+            className="portfolio-banner-image"
+            src={projectsImage}
+            alt="AI-generated banner of a glowing orange line winding through gold leaves"
+          />
+          <h2 className="portfolio-heading">Projects</h2>
+        </div>
         <div className="portfolio-grid">
           {projects.map((project) => (
             <ProjectCard key={project.name} {...project} />
