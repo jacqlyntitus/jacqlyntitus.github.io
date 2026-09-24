@@ -29,12 +29,14 @@ function Home() {
       </section>
 
       <section className="home-section home-technical">
-        <h2 className="home-heading">Technical Skills</h2>
-        <img
-          className="home-image home-banner"
-          src={skillsImage}
-          alt="AI-generated banner of glowing circuitry intertwined with leaves"
-        />
+        <div className="home-banner">
+          <img
+            className="home-banner-image"
+            src={skillsImage}
+            alt="AI-generated banner of glowing circuitry intertwined with leaves"
+          />
+          <h2 className="home-heading">Technical Skills</h2>
+        </div>
         <div className="home-grid home-grid-two">
           {technicalSkills.map((skill) => (
             <SkillCard key={skill.title} {...skill} />
@@ -43,12 +45,14 @@ function Home() {
       </section>
 
       <section className="home-section home-soft">
-        <h2 className="home-heading">Soft Skills</h2>
-        <img
-          className="home-image home-banner"
-          src={softSkillsImage}
-          alt="AI-generated banner of glowing light and leaves suggesting connection and growth"
-        />
+        <div className="home-banner">
+          <img
+            className="home-banner-image"
+            src={softSkillsImage}
+            alt="AI-generated banner of glowing light and leaves suggesting connection and growth"
+          />
+          <h2 className="home-heading">Soft Skills</h2>
+        </div>
         <div className="home-grid home-grid-three">
           {softSkills.map((skill) => (
             <SkillCard key={skill.title} {...skill} />
