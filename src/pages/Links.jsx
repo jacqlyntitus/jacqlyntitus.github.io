@@ -1,12 +1,13 @@
 import './Links.css'
+import { Banner } from '../components/Banner'
 import { LinkCard } from '../components/LinkCard'
 import { links } from '../data/links'
 
 function Links() {
   return (
     <div className="links-page">
-      <h1>Links</h1>
-      <p className="links-intro">Resources I use while learning and building.</p>
+      <Banner title="Links" />
+      <p className="links-intro">Where to find me online, plus a resource I use while building.</p>
 
       <section className="links-section">
         {links.map((link) => (

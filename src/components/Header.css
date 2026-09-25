@@ -13,7 +13,23 @@
 
 .header-logo-link {
   display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
   max-width: 100%;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.header-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-mallorn);
+}
+
+.header-role {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--color-text);
 }
 
 .header-logo {
@@ -61,6 +77,10 @@
 
   .header-logo {
     height: 40px;
+  }
+
+  .header-title {
+    font-size: 1rem;
   }
 
   .header-nav {

@@ -11,6 +11,10 @@ export function Header() {
           src={logo}
           alt="Jacqlyn Titus JT monogram logo"
         />
+        <span className="header-title">
+          Jacqlyn Titus,{' '}
+          <span className="header-role">Junior Developer</span>
+        </span>
       </Link>
       <nav className="header-nav" aria-label="Main navigation">
         <NavLink to="/" end>Home</NavLink>

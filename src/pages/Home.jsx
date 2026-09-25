@@ -13,10 +13,13 @@ function Home() {
           <h1 className="home-name">Jacqlyn Titus</h1>
           <p className="home-tagline">Full-Stack Developer</p>
           <p>
-            I&apos;m a full-stack developer who enjoys understanding how systems
-            work from end to end. I love problem solving: stepping back to see
-            the big picture, then zeroing in on the details that fix it. Twelve
-            years in healthcare taught me to be prompt, precise, and
+            I&apos;m an AI-native full-stack developer who enjoys understanding
+            how systems work from end to end. I love problem solving: stepping
+            back to see the big picture, then zeroing in on the details that
+            fix it.
+          </p>
+          <p>
+            Twelve years in healthcare taught me to be prompt, precise, and
             comfortable working directly with clients, and I bring that same
             care to every project.
           </p>

@@ -82,7 +82,7 @@
 .contact-submit {
   align-self: flex-start;
   padding: 0.75rem 2rem;
-  background: var(--color-electric);
+  background: var(--color-moss);
   border: none;
   border-radius: var(--radius-pill);
   color: var(--color-bg);
@@ -93,7 +93,8 @@
 
 .contact-submit:hover:not(:disabled),
 .contact-submit:focus-visible:not(:disabled) {
-  box-shadow: 0 0 18px var(--color-electric);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-electric);
 }
 
 .contact-submit:disabled {
