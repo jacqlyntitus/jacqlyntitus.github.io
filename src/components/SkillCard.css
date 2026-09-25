@@ -1,0 +1,27 @@
+.skill-card {
+  padding: var(--space-md);
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  border-color: var(--color-electric);
+  box-shadow: 0 0 18px var(--color-electric);
+}
+
+.skill-card-icon {
+  color: var(--color-mallorn);
+}
+
+.skill-card-title {
+  margin: var(--space-xs) 0;
+  color: var(--color-silver);
+  font-size: 1.25rem;
+}
+
+.skill-card-text {
+  margin: 0;
+  color: var(--color-text-muted);
+}

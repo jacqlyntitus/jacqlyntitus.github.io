@@ -1,0 +1,129 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-md);
+}
+
+.contact-intro {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.contact-card {
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--space-md);
+  background: var(--color-surface-alt);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.contact-fallback {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.contact-field label {
+  font-weight: 600;
+  color: var(--color-silver);
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font: inherit;
+}
+
+.contact-field input:focus-visible,
+.contact-field textarea:focus-visible {
+  outline: none;
+  border-color: var(--color-electric);
+  box-shadow: 0 0 0 3px var(--color-electric);
+}
+
+.contact-field input:disabled,
+.contact-field textarea:disabled {
+  opacity: 0.6;
+}
+
+.contact-field textarea {
+  resize: vertical;
+}
+
+.contact-error {
+  margin: 0;
+  color: var(--color-error);
+  font-size: 0.85rem;
+}
+
+.contact-submit {
+  align-self: flex-start;
+  padding: 0.75rem 2rem;
+  background: var(--color-moss);
+  border: none;
+  border-radius: var(--radius-pill);
+  color: var(--color-bg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, box-shadow 0.2s;
+}
+
+.contact-submit:hover:not(:disabled),
+.contact-submit:focus-visible:not(:disabled) {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-electric);
+}
+
+.contact-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.contact-status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin: 0;
+  font-weight: 600;
+}
+
+.contact-status-success {
+  color: var(--color-success);
+}
+
+.contact-status-error {
+  color: var(--color-error);
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .contact-card {
+    padding: var(--space-sm);
+  }
+}

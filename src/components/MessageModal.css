@@ -1,0 +1,83 @@
+.message-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm);
+  z-index: 100;
+}
+
+.message-modal {
+  width: 100%;
+  max-width: 560px;
+  max-height: 80vh;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  overflow: hidden;
+}
+
+.message-modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message-modal-close {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0.5rem 1rem;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.message-modal-close:hover,
+.message-modal-close:focus-visible {
+  border-color: var(--color-electric);
+  color: var(--color-electric);
+}
+
+.message-modal-fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin: 0;
+}
+
+.message-modal-field {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.message-modal-field dt {
+  min-width: 80px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.message-modal-field dd {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.message-modal-field a {
+  color: var(--color-electric);
+}
+
+.message-modal-body {
+  margin: 0;
+  padding-top: var(--space-xs);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text);
+  white-space: pre-wrap;
+  overflow-y: auto;
+}

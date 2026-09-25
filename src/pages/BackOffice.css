@@ -1,0 +1,159 @@
+.backoffice-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.backoffice-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.backoffice-logout {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.backoffice-logout:hover,
+.backoffice-logout:focus-visible {
+  border-color: var(--color-ember);
+  box-shadow: 0 0 18px var(--color-ember);
+}
+
+.backoffice-error {
+  margin: 0;
+  color: var(--color-error);
+  font-weight: 600;
+}
+
+.backoffice-empty {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.backoffice-table-wrap {
+  background: var(--color-surface-alt);
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm);
+  overflow-x: auto;
+}
+
+.backoffice-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.backoffice-table th {
+  text-align: left;
+  padding: var(--space-xs) var(--space-sm);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.backoffice-table td {
+  padding: var(--space-xs) var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.backoffice-table tbody tr {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.backoffice-table tbody tr:hover {
+  background: var(--color-surface);
+}
+
+.backoffice-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.backoffice-table a {
+  color: var(--color-electric);
+}
+
+.backoffice-actions {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.backoffice-view,
+.backoffice-delete {
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.backoffice-view {
+  color: var(--color-electric);
+}
+
+.backoffice-view:hover,
+.backoffice-view:focus-visible {
+  border-color: var(--color-electric);
+}
+
+.backoffice-delete {
+  color: var(--color-error);
+}
+
+.backoffice-delete:hover,
+.backoffice-delete:focus-visible {
+  border-color: var(--color-error);
+}
+
+@media (max-width: 768px) {
+  .backoffice-table thead {
+    display: none;
+  }
+
+  .backoffice-table,
+  .backoffice-table tbody,
+  .backoffice-table tr,
+  .backoffice-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .backoffice-table tbody tr {
+    margin-bottom: var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-xs);
+  }
+
+  .backoffice-table tbody tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .backoffice-table td {
+    border-bottom: none;
+    padding: 0.35rem var(--space-xs);
+  }
+
+  .backoffice-table td::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .backoffice-actions {
+    padding-top: var(--space-xs);
+  }
+}
