@@ -2,6 +2,7 @@ import { Download } from 'lucide-react'
 import './Portfolio.css'
 import experienceImage from '../assets/portfolio-experience.png'
 import projectsImage from '../assets/portfolio-projects.png'
+import skillsImage from '../assets/home-skills.png'
 import { ProjectCard } from '../components/ProjectCard'
 import { education, projects, work } from '../data/portfolio'
 
@@ -21,7 +22,14 @@ function Portfolio() {
       </div>
 
       <section className="portfolio-section portfolio-education">
-        <h2 className="portfolio-heading">Education</h2>
+        <div className="portfolio-banner">
+          <img
+            className="portfolio-banner-image"
+            src={skillsImage}
+            alt="AI-generated banner of glowing circuitry intertwined with leaves"
+          />
+          <h2 className="portfolio-heading">Education</h2>
+        </div>
         <div className="portfolio-grid">
           {education.map((entry) => (
             <article key={entry.institution} className="portfolio-card">

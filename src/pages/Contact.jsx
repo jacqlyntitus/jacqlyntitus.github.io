@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Check, X } from 'lucide-react'
 import './Contact.css'
+import { Banner } from '../components/Banner'
 import { supabase, isSupabaseConfigured } from '../lib/supabaseClient'
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -84,7 +85,7 @@ function Contact() {
 
   return (
     <div className="contact-page">
-      <h1>Contact</h1>
+      <Banner title="Contact" />
       <p className="contact-intro">Get in touch about opportunities, projects, or questions.</p>
 
       <div className="contact-card">
