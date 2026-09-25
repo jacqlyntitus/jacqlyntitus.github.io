@@ -41,7 +41,7 @@ jacqlyntitus.github.io/
 ├── .github/workflows/
 │   └── deploy.yml          # Build and deploy to GitHub Pages on push to main
 ├── public/
-│   ├── favicon.svg
+│   ├── jt-logo.png         # Favicon
 │   └── resume.pdf          # Served for the "Download Resume" button
 ├── src/
 │   ├── main.jsx            # Entry point: mounts <App /> inside HashRouter

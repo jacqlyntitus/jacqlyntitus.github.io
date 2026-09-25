@@ -7,7 +7,7 @@ Video links:
 
 Pitch video V1: https://youtu.be/jIB1Ws_Dq4c?si=yzHaAriHSthPSCbH
 Pitch video V2: https://youtu.be/Y-isq7b_NCE?si=9UcwkcBvJsc9gdBj
-Concepts:
+Concepts: https://youtu.be/FaiL2ePbBSM
 Leetcode:
 Tech Demo: 
 

@@ -111,7 +111,7 @@ All components use named exports and each imports its own CSS file from the same
 - Remove the default Vite demo markup from `App.jsx`.
 - Delete `src/App.css` and `src/index.css`; their replacements are `src/styles/global.css` and the per-component CSS files.
 - Delete unused Vite demo assets: `src/assets/hero.png`, `src/assets/react.svg`, `src/assets/vite.svg`, `public/icons.svg`.
-- Keep `public/favicon.svg` and its link in `index.html` unchanged.
+- Use `public/jt-logo.png` as the favicon, linked from `index.html`.
 
 ## 10. Constraints
 
